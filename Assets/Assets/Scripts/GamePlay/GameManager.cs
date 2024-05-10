@@ -1,11 +1,9 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using ChuongCustom;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Random = UnityEngine.Random;
 
 public enum State
 {
@@ -24,6 +22,8 @@ public class GameManager : Singleton<GameManager>
 
     public GameObject[] respawns;
 
+    public Tween Tween;
+
     public void SetState(State state)
     {
         currentState = state;
@@ -39,10 +39,6 @@ public class GameManager : Singleton<GameManager>
         SceneManager.LoadScene("Game");
     }
 
-    void Start()
-    {
-    }
-
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && currentState != State.Playing)
@@ -50,27 +46,31 @@ public class GameManager : Singleton<GameManager>
             SetState(State.Playing);
             tap.SetActive(false);
             PlayerController.Instance.Play();
+
+            CountScore();
         }
     }
-
-    private bool CheckWin()
+    
+    public void CountScore()
     {
-        return true;
+        Tween = DOVirtual.DelayedCall(1f, () =>
+        {
+            ScoreManager.Score += 1;
+        }).SetTarget(transform).SetLoops(-1);
     }
 
-    public void MoveColor(TesterTube tube)
+    private void OnDestroy()
     {
-    }
-
-
-    public void Help()
-    {
+        Tween.Kill();
     }
 
     public void ShowLose()
     {
+        
+        Tween.Kill();
         Time.timeScale = 0;
 
+        
         SetState(State.Lose);
         Manager.ScreenManager.OpenScreen(ScreenType.Lose);
 
