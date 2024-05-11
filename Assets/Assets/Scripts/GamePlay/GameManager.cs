@@ -4,6 +4,7 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public enum State
 {
@@ -23,6 +24,8 @@ public class GameManager : Singleton<GameManager>
     public GameObject[] respawns;
 
     public Tween Tween;
+
+    public float Speed = 1;
 
     public void SetState(State state)
     {
@@ -50,13 +53,13 @@ public class GameManager : Singleton<GameManager>
             CountScore();
         }
     }
-    
+
     public void CountScore()
     {
-        Tween = DOVirtual.DelayedCall(1f, () =>
-        {
-            ScoreManager.Score += 1;
-        }).SetTarget(transform).SetLoops(-1);
+        Tween.Kill();
+        Tween = DOVirtual.DelayedCall(1f, () => { ScoreManager.Score += 1; }).SetTarget(transform).SetLoops(-1);
+
+        DOVirtual.DelayedCall(5f, () => { Speed += 0.3f; }).SetTarget(transform).SetLoops(-1);
     }
 
     private void OnDestroy()
@@ -66,11 +69,10 @@ public class GameManager : Singleton<GameManager>
 
     public void ShowLose()
     {
-        
         Tween.Kill();
         Time.timeScale = 0;
 
-        
+
         SetState(State.Lose);
         Manager.ScreenManager.OpenScreen(ScreenType.Lose);
 

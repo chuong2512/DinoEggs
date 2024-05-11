@@ -45,13 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skins:
-  - price: 12
+  - price: 0
     sprite: {fileID: 21300000, guid: 102d8c79feaf010448625fbbc87f00e3, type: 3}
-  - price: 18
+  - price: 100
     sprite: {fileID: 21300000, guid: d65e082732d10cc40a4db2d753424f12, type: 3}
-  - price: 17
+  - price: 1000
     sprite: {fileID: 21300000, guid: 1ce276b2c7a5be24fb678c4b28c31ce1, type: 3}
-  - price: 29
+  - price: 2000
     sprite: {fileID: 21300000, guid: 45c95770a15107d4cb3df4427f21f7ea, type: 3}
-  - price: 14
+  - price: 5000
     sprite: {fileID: 21300000, guid: 186fc6e23e8b6da4ab09ee66729c530f, type: 3}

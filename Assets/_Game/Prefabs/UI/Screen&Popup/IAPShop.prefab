@@ -516,11 +516,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1313820359628237287, guid: 4a0815c6e2845bc45bdc35a03aeb8a2a, type: 3}
       propertyPath: value
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1313820359628237287, guid: 4a0815c6e2845bc45bdc35a03aeb8a2a, type: 3}
       propertyPath: value1
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1313820359628237287, guid: 4a0815c6e2845bc45bdc35a03aeb8a2a, type: 3}
       propertyPath: productID
@@ -630,11 +630,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1313820359628237287, guid: 4a0815c6e2845bc45bdc35a03aeb8a2a, type: 3}
       propertyPath: value
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1313820359628237287, guid: 4a0815c6e2845bc45bdc35a03aeb8a2a, type: 3}
       propertyPath: value1
-      value: 20
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1313820359628237287, guid: 4a0815c6e2845bc45bdc35a03aeb8a2a, type: 3}
       propertyPath: productID
@@ -744,11 +744,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1313820359628237287, guid: 4a0815c6e2845bc45bdc35a03aeb8a2a, type: 3}
       propertyPath: value
-      value: 2
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1313820359628237287, guid: 4a0815c6e2845bc45bdc35a03aeb8a2a, type: 3}
       propertyPath: value1
-      value: 2
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1313820359628237287, guid: 4a0815c6e2845bc45bdc35a03aeb8a2a, type: 3}
       propertyPath: productID
@@ -856,6 +856,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2638935811557760223}
     m_Modifications:
+    - target: {fileID: 1313820359628237287, guid: 4a0815c6e2845bc45bdc35a03aeb8a2a, type: 3}
+      propertyPath: value
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313820359628237287, guid: 4a0815c6e2845bc45bdc35a03aeb8a2a, type: 3}
+      propertyPath: value1
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1313820359628237287, guid: 4a0815c6e2845bc45bdc35a03aeb8a2a, type: 3}
       propertyPath: productID
       value: dino_eggs_goi_1

@@ -61,9 +61,10 @@ namespace ChuongCustom
                 return;
             }
 
-            if (Data.Player._coin < _skinData.price)
+            if (Data.Player.Gem < _skinData.price)
             {
-                ToastManager.Instance.ShowMessageToast("Not enough Gem!!");
+                Data.Player.Gem -= _skinData.price;
+                ToastManager.Instance.ShowMessageToast("Not enough resources!!");
                 return;
             }
 

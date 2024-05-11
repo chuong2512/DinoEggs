@@ -677,6 +677,7 @@ MonoBehaviour:
   highPoint: {fileID: 1615597823}
   tap: {fileID: 59844776}
   respawns: []
+  Speed: 1
 --- !u!114 &80952265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3273,7 +3274,7 @@ GameObject:
   - component: {fileID: 1125272974}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3736,18 +3737,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 4835359355905633491, guid: 78db9484ee743484d8e221d357c3b425, type: 3}
+  - {fileID: 4835359355905633491, guid: 30faa948352e15a4c891b81e3fb28523, type: 3}
+  - {fileID: 4686970592839344141, guid: cde77b959f979114db5121c8adff085b, type: 3}
   - {fileID: 7045142834467915512, guid: a61f4edbd4f34c949a6b9ba70f5b0931, type: 3}
+  - {fileID: 7045142834467915512, guid: e0047a834cb1d7f4f96ec1c044720927, type: 3}
+  - {fileID: 2698735593702418110, guid: e130689f29fbca64f94b5071f8fab12e, type: 3}
   - {fileID: 2698735593702418110, guid: e1fdd57863812e940a1927b7ff8fe387, type: 3}
   - {fileID: 2698735593702418110, guid: e5901e8b162ad3841b39f9a33d433e84, type: 3}
   - {fileID: 2698735593702418110, guid: 5b23b2b48fc401443931c74531ec5b74, type: 3}
   - {fileID: 2698735593702418110, guid: 1e1a5df326fbc4e4fb8100b5e6d812a7, type: 3}
-  - {fileID: 2698735593702418110, guid: e130689f29fbca64f94b5071f8fab12e, type: 3}
-  - {fileID: 7218089902177827103, guid: c88fe2eae76b681468503bc500a75d95, type: 3}
+  - {fileID: 2698735593702418110, guid: 97063b4ec0d2ebf47b6cb41c315a77d7, type: 3}
+  - {fileID: 2698735593702418110, guid: 07d2c24a92ecc2c4e82c10ffaa9c1e9b, type: 3}
+  - {fileID: 2698735593702418110, guid: 3e2c3105b69282f4a82b9c4fb6c0b3db, type: 3}
+  - {fileID: 2698735593702418110, guid: 05889d32b20e18d4c92d1b8f2aa2a6fe, type: 3}
+  - {fileID: 2698735593702418110, guid: 9c640d168446e9749ac297f5a8326e31, type: 3}
+  - {fileID: 7218089902177827103, guid: 4523b9fdcda472b4887fab45f37bf275, type: 3}
   - {fileID: 6827584560237475417, guid: 44e337edc52843f468c92b7e535ccb1f, type: 3}
+  - {fileID: 6827584560237475417, guid: 66eea750eff04ef40a052662276d22a7, type: 3}
+  - {fileID: 3517721613608240372, guid: c96603dab69f7004ab17d68e6186f684, type: 3}
   - {fileID: 3517721613608240372, guid: da457540ed99cc54194f700982e8e439, type: 3}
   - {fileID: 3517721613608240372, guid: b8af6678dd207c34e9c2d71b05c7bef7, type: 3}
-  - {fileID: 3517721613608240372, guid: c96603dab69f7004ab17d68e6186f684, type: 3}
-  - {fileID: 4686970592839344141, guid: cde77b959f979114db5121c8adff085b, type: 3}
+  - {fileID: 3517721613608240372, guid: daf334cc2ba1ba64d9605525a2f84ea7, type: 3}
+  - {fileID: 3517721613608240372, guid: ce34b74fd2bad5b43bd5db455f6960d0, type: 3}
+  - {fileID: 3517721613608240372, guid: 502fe1d03db137a4aa6e51f2b5589a80, type: 3}
+  - {fileID: 4686970592839344141, guid: f1da1021bcb7d584bb32f8f9da5f5f19, type: 3}
   time: 1
   timeCount: 6
 --- !u!4 &1293605839
