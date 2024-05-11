@@ -63,11 +63,12 @@ namespace ChuongCustom
 
             if (Data.Player.Gem < _skinData.price)
             {
-                Data.Player.Gem -= _skinData.price;
                 ToastManager.Instance.ShowMessageToast("Not enough resources!!");
                 return;
             }
 
+            
+            Data.Player.Gem -= _skinData.price;
             Data.Player.skinUnlocks[_id] = 1;
             Selected();
             ToastManager.Instance.ShowMessageToast("Buy Success!!");
