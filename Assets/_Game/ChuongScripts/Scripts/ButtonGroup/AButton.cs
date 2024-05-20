@@ -22,7 +22,14 @@ namespace ChuongCustom
         private void Start()
         {
             SetListener(OnClickButton);
+            _button.onClick.AddListener(ClickSound);
             OnStart();
+        }
+
+        private void ClickSound()
+        {
+            MasterAudioManager.ClickSound();
+            Debug.LogError("Click");
         }
 
         public void SetListener(UnityAction action)

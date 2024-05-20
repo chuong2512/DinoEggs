@@ -43,5 +43,7 @@ public class PlayerController : Singleton<PlayerController>
         transform.position += Vector3.up * high;
 
         Instantiate(trung, pos, Quaternion.identity);
+        
+        MasterAudioManager.Play2DSfx(AudioConst.Jump);
     }
 }

@@ -16,4 +16,7 @@ public static class GameAction
 
 public class OutGameManager : Singleton<OutGameManager>
 {
+    private void Start()
+    {
+    }
 }

@@ -73,6 +73,7 @@ public class GameManager : Singleton<GameManager>
         Time.timeScale = 0;
 
 
+        MasterAudioManager.Play2DSfx(AudioConst.LoseGame);
         SetState(State.Lose);
         Manager.ScreenManager.OpenScreen(ScreenType.Lose);
 
